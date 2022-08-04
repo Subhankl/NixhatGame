@@ -75,7 +75,18 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 
 const ozelMesaj = isGroup => Degisken(`
-    *👋 sᴀʟᴀᴍ.ᴍəɴ ǫʀᴜᴘʟᴀʀ üçüɴ şəʜɪ̇ᴅʟəʀɪ̇ᴍɪ̇ᴢɪ̇ɴ ʏᴀşɪɴ ᴛəxᴍɪ̇ɴ ᴇᴛᴍəᴋ üçüɴ ʏᴀʀᴀᴅɪʟᴍɪş ʙᴏᴛᴀᴍ..🥀\n*
+    *Salam 🇦🇿
+
+• Mən Qruplar üçün hazırlanmış oyun Botuyam 🇦🇿 
+
+• Əyləncəli vaxt Keçirmək üçün Mənimlə Oynaya bilərsən ✍🏻 
+Salam 🇦🇿
+
+• Mən Qruplar üçün hazırlanmış oyun Botuyam 🇦🇿 
+
+• Əyləncəli vaxt Keçirmək üçün Mənimlə Oynaya bilərsən ✍🏻 
+
+• 🌐 Bot @Axhmedov Tərəfindən Yaradılmışdır.\n\n*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
 `)
 
