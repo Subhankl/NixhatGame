@@ -75,7 +75,7 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 
 const ozelMesaj = isGroup => Degisken(`
-    *Salam, Mən təxmin oyun botuyam zamanınızı əyləncəli keçirmək üçün\nməni qrupuna əlavə et🤖*
+    *👋 sᴀʟᴀᴍ.ᴍəɴ ǫʀᴜᴘʟᴀʀ üçüɴ şəʜɪ̇ᴅʟəʀɪ̇ᴍɪ̇ᴢɪ̇ɴ ʏᴀşɪɴ ᴛəxᴍɪ̇ɴ ᴇᴛᴍəᴋ üçüɴ ʏᴀʀᴀᴅɪʟᴍɪş ʙᴏᴛᴀᴍ..🥀\n*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
 `)
 
@@ -428,7 +428,7 @@ bot.start(async (ctx) => {
         reply_markup:{
             inline_keyboard:[
                 [{text:'Botu Qrupa Əlavə Edin ✅', url:`https://t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'Rəsmi Kanalımız 📣', url:`t.me/RichResmi`},{text:'Qruplar 💎', callback_data:'vip'}]
+                [{text:'Rəsmi Kanalımız 📣', url:`t.me/SehidlerGameResmi`},{text:'Qruplar 🇦🇿', callback_data:'vip'}]
             ]
         }
     })
@@ -441,7 +441,7 @@ bot.action('start', ctx=>{
         reply_markup:{
             inline_keyboard:[
                 [{text:'Botu Qrupa Əlavə Edin ✅', url:`t.me/${process.env.BOT_ISMI}?startgroup=true`}],
-                [{text:'Rəsmi Kanalımız 📣', url:`t.me/RichResmi`},{text:'Qruplar 💎', callback_data:'vip'}]
+                [{text:'Rəsmi Kanalımız 📣', url:`t.me/SehidlerGameResmi`},{text:'Qruplar 🇦🇿', callback_data:'vip'}]
             ]
         }
     })
@@ -468,8 +468,8 @@ bot.action('AZ', ctx=>{
     ctx.replyWithMarkdown(`*🇦🇿 Qruplar*`,{
         reply_markup:{
             inline_keyboard:[
-                [{text:'1) Qrup ', url:'t.me/KarabakhTeams'}],
-                [{text:'2) Qrup ', url:'t.me/Richsuppp'}],
+                [{text:'1) Qrup ', url:'t.me/Premiumchattt'}],
+                [{text:'2) Qrup ', url:'t.me/kinggrupummm'}],
                 [{text:'🔙 Geri', callback_data:'vip'}]
             ]
         }
@@ -484,8 +484,8 @@ bot.action('TR', ctx=>{
        `,{
         reply_markup:{
             inline_keyboard:[
-                [{text:'1) Qrup', url:'t.me/KarabakhTeams'}],
-                [{text:'2) Qrup', url:'t.me/Richsuppp'}],
+                [{text:'1) Qrup', url:'t.me/Premiumchattt'}],
+                [{text:'2) Qrup', url:'t.me/kinggrupummm'}],
                 [{text:'🔙 Geri', callback_data:'vip'}]
             ]
         }
