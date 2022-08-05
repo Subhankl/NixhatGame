@@ -73,20 +73,17 @@ const OyunYaratHusnuEhedov = chatId => {
 	}
 	return oyunDurumuHusnuEhedov[chatId]
 }
-
+@Client.on_message(filters.command("start"))
+async def start(bot, message):
+  await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=START,reply_markup=keyboard)
 const ozelMesaj = isGroup => Degisken(`
     *Salam 🇦🇿
 
-• Mən Qruplar üçün hazırlanmış oyun Botuyam 🇦🇿 
+Mən Qruplar üçün hazırlanmış oyun Botuyam 🇦🇿 
 
-• Əyləncəli vaxt Keçirmək üçün Mənimlə Oynaya bilərsən ✍🏻 
-Salam 🇦🇿
+Əyləncəli vaxt Keçirmək üçün Mənimlə Oynaya bilərsən ✍🏻 
 
-• Mən Qruplar üçün hazırlanmış oyun Botuyam 🇦🇿 
-
-• Əyləncəli vaxt Keçirmək üçün Mənimlə Oynaya bilərsən ✍🏻 
-
-• 🌐 Bot @Axhmedov Tərəfindən Yaradılmışdır.\n\n*
+🌐 Bot @Axhmedov Tərəfindən Yaradılmışdır.\n\n\n\n*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
 `)
 
