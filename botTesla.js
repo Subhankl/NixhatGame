@@ -73,9 +73,6 @@ const OyunYaratHusnuEhedov = chatId => {
 	}
 	return oyunDurumuHusnuEhedov[chatId]
 }
-@Client.on_message(filters.command("start"))
-async def start(bot, message):
-  await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=START,reply_markup=keyboard)
 const ozelMesaj = isGroup => Degisken(`
     *Salam 🇦🇿
 
