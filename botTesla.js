@@ -172,6 +172,10 @@ const RaundMesajHusnuEhedov = (chatId, round, time) => {
 	return Degisken(`
 		*🔹 Raund ${round + 1}/${process.env.RAUND_SAYI}*
 		❓ Sizcə bu şəxsin neçə yaşı var
+                 ⚡ Yay Sezonu Qalibi Sən ol ⚡
+1 - Ci Yer 15 Azn 💸
+2 Ci - Yer 10 Azn 💸
+3 Cü - Yer 5 Azn 💸
 		${answers.length > 0 ? 
 			`\n${answers.map((member, index) => `${index + 1}. *${member.firstName}*: ${member.answer}`).join("\n")}\n`
 			:
