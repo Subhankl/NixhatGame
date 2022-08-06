@@ -73,12 +73,12 @@ const OyunYaratHusnuEhedov = chatId => {
 	}
 	return oyunDurumuHusnuEhedov[chatId]
 }
+await message.reply_sticker("CAACAgQAAxkBAAI8bmKIvgnlJyCrq9HIxSvCZCbm5CEjAAIaEAACpvFxHg-Z648-SCRWJAQ")
+    await message.reply_text(
 const ozelMesaj = isGroup => Degisken(`
 *👋 Salam! Mən, vaxtıvızı əyləncəli hala gətirmək üçün təxmin üzərinə qurulu bir oyun botuyam 🔍🤖\n\n\n\n\n\n\n\n*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
 `)
-
-
 const YasOyunBaslat = () => {  // OYUN RESİM ALMASI GEREK DOSYA KONUM 
 	let imagePath = "./resimler"
 	let fimeName = randomResim(fs.readdirSync(imagePath))
@@ -172,10 +172,10 @@ const RaundMesajHusnuEhedov = (chatId, round, time) => {
 🆘 Rəsmi Kanalımız 🆘
 🆘 @SehidlerGameResmi 🆘
 
-      ⚡Yay Sezonu Qalibi Sən ol ⚡
-       1 - Ci Yer 15 Azn 💸
-       2 - Ci Yer 10 Azn 💸
-       3 Cü - Yer 5 Azn 💸
+⚡Yay Sezonu Qalibi Sən ol ⚡
+1 - Ci Yer 15 Azn 💸
+2 - Ci Yer 10 Azn 💸
+3 Cü - Yer 5 Azn 💸
 		${answers.length > 0 ? 
 			`\n${answers.map((member, index) => `${index + 1}. *${member.firstName}*: ${member.answer}`).join("\n")}\n`
 			:
