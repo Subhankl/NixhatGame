@@ -74,11 +74,7 @@ const OyunYaratHusnuEhedov = chatId => {
 	return oyunDurumuHusnuEhedov[chatId]
 }
 const ozelMesaj = isGroup => Degisken(`
-*Salam 🇦🇿
-Mən Qruplar üçün hazırlanmış oyun Botuyam 🇦🇿  
-Əyləncəli vaxt Keçirmək üçün Mənimlə Oynaya bilərsən ✍🏻 
-🌐 Bot @Axhmedov Tərəfindən Yaradılmışdır.
-🆘 Hər hansı problemlə qarşılaşsanız @PremiumSupp qrupumuza gəlib bildirə bilərsiniz!\n\n\n\n\n\n\n\n*
+*👋 Salam! Mən, vaxtıvızı əyləncəli hala gətirmək üçün təxmin üzərinə qurulu bir oyun botuyam 🔍🤖\n\n\n\n\n\n\n\n*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
 `)
 
@@ -171,11 +167,15 @@ const RaundMesajHusnuEhedov = (chatId, round, time) => {
 
 	return Degisken(`
 		*🔹 Raund ${round + 1}/${process.env.RAUND_SAYI}*
-		❓ Sizcə bu şəxsin neçə yaşı var
-                 ⚡ Yay Sezonu Qalibi Sən ol ⚡
-1 - Ci Yer 15 Azn 💸
-2 Ci - Yer 10 Azn 💸
-3 Cü - Yer 5 Azn 💸
+		❓Sizcə Şəkildəki Şəhid Necə Yaşındadır. 🤔
+📌 Məntiq Şəhidin Yaşını Tapmaq.
+🆘 Rəsmi Kanalımız 🆘
+🆘 @SehidlerGameResmi 🆘
+
+      ⚡Yay Sezonu Qalibi Sən ol ⚡
+       1 - Ci Yer 15 Azn 💸
+       2 - Ci Yer 10 Azn 💸
+       3 Cü - Yer 5 Azn 💸
 		${answers.length > 0 ? 
 			`\n${answers.map((member, index) => `${index + 1}. *${member.firstName}*: ${member.answer}`).join("\n")}\n`
 			:
