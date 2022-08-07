@@ -73,8 +73,6 @@ const OyunYaratHusnuEhedov = chatId => {
 	}
 	return oyunDurumuHusnuEhedov[chatId]
 }
-await message.reply_sticker("CAACAgQAAxkBAAI8bmKIvgnlJyCrq9HIxSvCZCbm5CEjAAIaEAACpvFxHg-Z648-SCRWJAQ")
-    await message.reply_text(
 const ozelMesaj = isGroup => Degisken(`
 *👋 Salam! Mən, vaxtıvızı əyləncəli hala gətirmək üçün təxmin üzərinə qurulu bir oyun botuyam 🔍🤖\n\n\n\n\n\n\n\n*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
