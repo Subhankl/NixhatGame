@@ -73,39 +73,8 @@ const OyunYaratHusnuEhedov = chatId => {
 	}
 	return oyunDurumuHusnuEhedov[chatId]
 }
-@LanguageStart
-async def start_comm(client, message: Message, _):
-    await add_served_user(message.from_user.id)
-    if len(message.text.split()) > 1:
-        name = message.text.split(None, 1)[1]
-        if name[0:4] == "help":
-            keyboard = help_pannel(_)
-            return await message.reply_text(
-                _["help_1"], reply_markup=keyboard
-            )
-@LanguageStart
-async def testbot(client, message: Message, _):
-    out = start_pannel(_)
-    return await message.reply_text(
-        _["start_1"].format(
-            message.chat.title, config.GAME_BOT_NAME
-        ),
-        reply_markup=InlineKeyboardMarkup(out),
-    )
-language = await get_lang(message.chat.id)
-            _ = get_string(language)
-            if member.id == app.id:
-                chat_type = message.chat.type
-                if chat_type != "supergroup":
-                    await message.reply_text(_["start_6"])
-                    return await app.leave_chat(message.chat.id)
-                if chat_id in await blacklisted_chats():
-                    await message.reply_text(
-                        _["start_7"].format(
-                            f"https://t.me/{app.username}?start=sudolist"
-                        )
 const ozelMesaj = isGroup => Degisken(`
-*👋 Salam! Mən, vaxtıvızı əyləncəli hala gətirmək üçün təxmin üzərinə qurulu bir oyun botuyam 🔍🤖\n\n\n\n\n\n\n\n*
+*👋Salam! Mən, vaxtıvızı əyləncəli hala gətirmək üçün təxmin üzərinə qurulu bir oyun botuyam 🔍🤖\n\n\n\n\n\n\n\n*
     ${isGroup ? "" : "\n*Əsas əmrlərin siyahısı üçün /help*"}
 `)
 const YasOyunBaslat = () => {  // OYUN RESİM ALMASI GEREK DOSYA KONUM 
@@ -199,7 +168,7 @@ const RaundMesajHusnuEhedov = (chatId, round, time) => {
 		❓Sizcə Şəkildəki Şəhid Necə Yaşındadır. 🤔
 📌 Məntiq Şəhidin Yaşını Tapmaq.
 🆘 Rəsmi Kanalımız 🆘
-🆘 @SehidlerGameResmi 🆘
+🆘 @SehidlerGameResmi🆘
 
 ⚡Yay Sezonu Qalibi Sən ol ⚡
 1 - Ci Yer 15 Azn 💸
